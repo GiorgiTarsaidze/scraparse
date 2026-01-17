@@ -1,5 +1,9 @@
 # scraparse
 
+![Python](https://img.shields.io/badge/Python-3.12.3-blue)
+![License](https://img.shields.io/badge/License-Apache%202.0-yellow)
+![GitHub stars](https://img.shields.io/github/stars/GiorgiTarsaidze/scraparse?style=social)
+
 Interactive CLI that generates a BeautifulSoup parsing script from a natural-language extraction request.
 
 ## Local setup
