@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual env
+.venv/
+venv
+venv/
+script_test_venv
+script_test_venv/
+
+# Local env
+.env
+
+# Editor
+.vscode/
+.idea/
+
+# Scraparse outputs
+.scraparse/
+
+# Build artifacts
+build/
+dist/
+htmlcov/
+.coverage
+coverage.xml

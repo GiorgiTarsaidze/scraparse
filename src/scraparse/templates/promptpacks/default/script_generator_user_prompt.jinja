@@ -1,0 +1,11 @@
+FieldSchema JSON:
+{{ schema_json }}
+
+HTML samples (full content):
+{% for sample in html_samples %}
+--- SAMPLE {{ loop.index }} START ---
+{{ sample }}
+--- SAMPLE {{ loop.index }} END ---
+{% endfor %}
+
+REMEMBER, your script will be run against all HTML provided files, so you need to avoid the file extraction for the files which do not contian the info needed.
