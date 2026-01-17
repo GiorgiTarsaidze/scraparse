@@ -104,3 +104,34 @@ scraparse --url "https://example.com/catalog" --discover --discover-mode listing
 
 - HTML only (no JS execution).
 - Generated scripts are saved under `.scraparse/generated/`.
+
+## Flag glossary
+
+Core inputs:
+- `--url`: Target URL to fetch.
+- `--prompt`: Extraction request for the schema generator.
+- `--context`: Optional context notes to clarify the request.
+- `--discover`: Enable discovery (crawl/pagination/listing).
+- `--discover-mode`: Discovery strategy: `crawl`, `pagination`, or `listing`.
+- `--next-selector`: CSS selector for pagination “next” link.
+- `--detail-selector`: CSS selector for detail links on a listing page.
+- `--promptpack`: Prompt pack name (defaults to `default`).
+- `--save-artifacts`: `true/false` to save HTML/schema artifacts.
+
+Limits (safety):
+- `--max-pages`: Max pages fetched in a run.
+- `--max-depth`: Max BFS depth (crawl only).
+- `--max-consecutive-failures`: Max consecutive fetch failures before abort.
+- `--same-domain-only`: `true/false` to restrict discovery to the same host.
+- `--timeout-connect-s`: HTTP connect timeout.
+- `--timeout-read-s`: HTTP read timeout.
+- `--timeout-total-s`: Total request timeout.
+- `--retries`: Retry count for failed requests.
+- `--backoff-base-s`: Base backoff seconds for retries.
+- `--backoff-max-s`: Max backoff seconds for retries.
+- `--jitter-s`: Random jitter added to backoff.
+- `--rate-limit-rps`: Per-host requests per second.
+- `--max-response-bytes`: Max bytes per page.
+- `--max-total-bytes`: Max bytes across the whole run.
+- `--max-runtime-s`: Max total runtime for a run.
+- `--max-html-chars-for-llm`: Max HTML chars sent to the LLM.
