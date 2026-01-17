@@ -45,3 +45,4 @@ Key flow:
 - Explore new discovery strategies.
 - Expand tests, fixtures, and edge-case coverage.
 - Add support for other LLMs
+- Add examples based on `webscraper.io/test-sites/e-commerce/allinone`
