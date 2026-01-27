@@ -30,7 +30,7 @@ class Limits:
     max_runtime_s: int = 180
 
     # LLM payload limits
-    max_html_chars_for_llm: int = 120_000
+    max_html_chars_for_llm: int = 150_000
 
     def with_overrides(self, overrides: dict[str, object]) -> "Limits":
         values = {**self.__dict__}
